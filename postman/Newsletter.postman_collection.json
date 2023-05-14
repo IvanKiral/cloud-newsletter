@@ -1,0 +1,92 @@
+{
+	"info": {
+		"_postman_id": "00e7186c-033c-4e91-a764-7ea716140a4d",
+		"name": "Newsletter",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14467017"
+	},
+	"item": [
+		{
+			"name": "Subscribe",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"test@email.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://484971-hw04.azurewebsites.net/api/Subscribe",
+					"protocol": "https",
+					"host": [
+						"484971-hw04",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"Subscribe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Unsubscribe",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"test@email.com\"\n}"
+				},
+				"url": {
+					"raw": "https://484971-hw04.azurewebsites.net/api/Unsubscribe",
+					"protocol": "https",
+					"host": [
+						"484971-hw04",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"Unsubscribe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://484971-hw04.azurewebsites.net/api/send",
+					"protocol": "https",
+					"host": [
+						"484971-hw04",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"send"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
